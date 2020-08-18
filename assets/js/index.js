@@ -66,8 +66,8 @@ $(function () {
             url: '/api/login',
             data: $(this).serialize(),
             success: function (res) {
-                console.log(res);
-                if (res.status != 1) {
+                // console.log(res);
+                if (res.status != 0) {
                     return layer.msg(res.message);
                 }
                 // 登录成功
@@ -75,6 +75,7 @@ $(function () {
                 // 保存token到localStroage
                 localStorage.setItem('token', res.token);
                 // 跳转到 首页
+                console.log("shou");
                 location.href = '/index.html';
             }
         });
