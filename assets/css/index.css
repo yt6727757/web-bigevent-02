@@ -38,3 +38,13 @@ iframe{
     margin-right: 10px;
 }
 
+
+/* layui内置字体图标 */
+.layui-icon{
+    margin-right: 8px;
+    margin-left: 20px;
+}
+/* iconfont 字体图标 */
+.iconfont {
+    margin-right: 8px;
+}
