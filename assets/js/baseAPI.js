@@ -18,7 +18,7 @@ $.ajaxPrefilter(function (params) {
             // 清空localStorage
             localStorage.removeItem('token');
             // 跳转到login页面
-            location.href = 'login.html';
+            top.location.href = '/login.html';
         }
     }
 });
